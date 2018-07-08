@@ -1,5 +1,5 @@
 <template>
-    <button class="button is-primary is-medium is-outlined" @click.prevent="handleClick">Copy</button>
+    <button class="button is-medium" @click.prevent="handleClick">Copy</button>
 </template>
 
 <script>
@@ -17,6 +17,12 @@
 
 <style scoped>
     .button {
-        padding: 0 3rem;
+        background-color: #F57C4B;
+        color: #FFFFFF;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+    }
+    .button:hover {
+        background-color: #DA6B3F;
     }
 </style>

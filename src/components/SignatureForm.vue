@@ -2,7 +2,7 @@
     <div class="column is-one-third">
         <section class="section">
             <h1 class="title">Signature Generator</h1>
-            <p class="subtitle">Enter your information below, press the Copy button under the preview window, and paste it into the the signature box of your desired email client.</p>
+            <p class="subtitle">Enter your information below, click the copy button under the preview window, and paste it into the the signature box of your desired email client.</p>
             <section class="form">
                 <slot></slot>
             </section>

@@ -6,78 +6,76 @@
                 <table border="0" cellspacing="0" cellpadding="0" width="350" style="min-width:350px; width:350px;">
                     <tbody>
                         <tr>
-                            <td colspan="2" valign="top" style="padding:0">
-                                <p style="line-height:14px">
-                                    <span style="font-size:14px; font-family:'Tahoma',sans-serif; color:#F57C4B">
-                                        {{ name }}
-                                    </span>
-                                </p>
-                                <p style="line-height:13px">
-                                    <i>
-                                        <span style="font-size:13px; font-family:'Tahoma',sans-serif; color:#7F7F7F">
-                                            {{ title }}
-                                        </span>
-                                    </i>
-                                    <span style="font-size:12px; font-family:'Tahoma',sans-serif; color:#F57C4B">
-                                    </span>
-                                </p>
+                            <td colspan="2" valign="top" style="padding:0; line-height:16px; font-size:16px; font-family:'Tahoma',sans-serif; color:#F57C4B">
+                                {{ name }}
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2" valign="top" style="padding:0">
-                                <div style="height:6px; line-height:6px; font-size:6px;">&nbsp;</div>
+                                <div style="height:4px; line-height:4px; font-size:4px;">&nbsp;</div>
                             </td>
                         </tr>
+                        <tr>
+                            <td colspan="2" valign="top" style="padding:0; line-height:13px; font-size:13px; font-family:'Tahoma',sans-serif; color:#7F7F7F">
+                                <i>{{ title }}</i>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" valign="top" style="padding:0">
+                                <div style="height:8px; line-height:8px; font-size:8px;">&nbsp;</div>
+                            </td>
+                        </tr>
+                        <tr>
                         <tr>
                             <td rowspan="2" valign="top" style="padding:0; min-width:52px; max-width:52px; width:52px;" v-show="showIcon === 'Yes'">
-                                <div style="height:3px; line-height:3px; font-size:3px;">&nbsp;</div>
-                                <p style="line-height:10px">
-                                        
-                                    <a href="http://www.lavidge.com/" target="_blank">
-                                        <span style="font-family:'Tahoma',sans-serif; color:blue; border:none windowtext 1px; padding:0; text-decoration:none">
-                                            <img border="0" width="52" height="20" style="width:52px;height:20px" src="../assets/lavidge_small.png" alt="Lavidge Logo" >
-                                        </span>
-                                    </a>
-                                    <span style="font-family:'Tahoma',sans-serif; color:#414042"></span>
-                                </p>
+                                <table border="0" cellpadding="0" cellspacing="0" height="23" style="height:23px; font-size:23px; line-height:23px;">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div style="font-size:3px; line-height:3px; height:3px">&nbsp;</div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="top" style="padding:0;">
+                                                <a href="http://www.lavidge.com/" target="_blank">
+                                                    <img border="0" width="52" height="20" style="width:52px;height:20px" src="http://files.lavidgeinteractive.com/lavidge/images/icons/lavidge_small.png" alt="Lavidge Logo" >
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </td>
                             <td align="left" valign="top" style="padding:0">
-                                <p style="line-height:10px">
-                                    <template v-if="phone.length > 0">
-                                        <b>
-                                            <span style="font-size:12px; font-family:'Tahoma',sans-serif; color:#F57C4B">
-                                                P
-                                            </span>
-                                        </b>
-                                        <span style="font-size:12px; font-family:'Tahoma',sans-serif; color:#414042">
-                                            &nbsp;{{ phone }}&nbsp;&nbsp;&nbsp;
-                                        </span>
-                                    </template>
-                                    <template v-if="fax.length > 0">
-                                        <b>
-                                            <span style="font-size:12px; font-family:'Tahoma',sans-serif; color:#F57C4B">
-                                                F
-                                            </span>
-                                        </b>
-                                        <span style="font-size:12px; font-family:'Tahoma',sans-serif; color:#414042">
-                                            &nbsp;{{ fax }}
-                                        </span>
-                                    </template>
-                                </p>
-                            </td>
-                        </tr>
-                        <tr v-show="showAddress === 'Yes'">
-                            <td valign="bottom" style="padding:0">
-                                <p style="line-height:10px">
-                                    <span style="font-size:12px; font-family:'Tahoma',sans-serif; color:#414042">
-                                        <a href="https://maps.google.com/?q=2777+E+Camelback+Rd,+Ste+300,+Phoenix,+AZ+85016&amp;entry=gmail&amp;source=g" style="color:#15c; text-decoration:underline">
-                                            2777 E Camelback Rd, Ste 300,
-                                        </a>
-                                        <a href="https://maps.google.com/?q=2777+E+Camelback+Rd,+Ste+300,+Phoenix,+AZ+85016&amp;entry=gmail&amp;source=g" style="color:#15c; text-decoration:underline">
-                                            Phoenix, AZ 85016
-                                        </a>
-                                    </span>
-                                </p>
+                                <table border="0" cellpadding="0" cellspacing="0">
+                                    <tbody>
+                                        <tr>
+                                            <td valign="top" style="color:#414042; font-family:'Tahoma', sans-serif; font-size:12px; line-height:12px; padding:0;">
+                                                <b>
+                                                    <span style="font-weight:bold; color:#F57C4B" v-if="phone.length > 0">
+                                                        P
+                                                    </span>
+                                                </b>
+                                                &nbsp;{{ phone }}&nbsp;&nbsp;&nbsp;
+                                                <b>
+                                                    <span style="font-weight:bold; color:#F57C4B" v-if="fax.length > 0">
+                                                        F
+                                                    </span>
+                                                </b>
+                                                &nbsp;{{ fax }}
+                                            </td>
+                                        </tr>
+                                        <tr v-show="showAddress === 'Yes'">
+                                            <td valign="bottom" style="padding:0; line-height:12px; font-size:12px; font-family:'Tahoma',sans-serif; color:#414042">
+                                                <a href="https://maps.google.com/?q=2777+E+Camelback+Rd,+Ste+300,+Phoenix,+AZ+85016&amp;entry=gmail&amp;source=g" style="color:#15c; text-decoration:underline">
+                                                    2777 E Camelback Rd, Ste 300,
+                                                </a>
+                                                <a href="https://maps.google.com/?q=2777+E+Camelback+Rd,+Ste+300,+Phoenix,+AZ+85016&amp;entry=gmail&amp;source=g" style="color:#15c; text-decoration:underline">
+                                                    Phoenix, AZ 85016
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </td>
                         </tr>
                     </tbody>
