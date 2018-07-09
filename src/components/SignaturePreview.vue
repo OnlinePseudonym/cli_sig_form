@@ -25,14 +25,14 @@
                                 <div style="height:8px; line-height:8px; font-size:8px;">&nbsp;</div>
                             </td>
                         </tr>
-                        <tr>
-                            <td colspan="2" valign="top" style="padding:0; line-height:13px; font-size:13px; font-family:'Tahoma',sans-serif; font-weight:bold; color:#7F7F7F" v-show="showIcon === 'No'">
+                        <tr v-if="showIcon === 'No'">
+                            <td colspan="2" valign="top" style="padding:0; line-height:13px; font-size:13px; font-family:'Tahoma',sans-serif; font-weight:bold; color:#7F7F7F">
                                 <strong>LAVIDGE</strong>
                                 <div style="height:4px; line-height:4px; font-size:4px;">&nbsp;</div>
                             </td>
                         </tr>
                         <tr>
-                            <td rowspan="2" valign="top" style="padding:0; min-width:52px; max-width:52px; width:52px;" v-show="showIcon === 'Yes'">
+                            <td rowspan="2" valign="top" style="padding:0; min-width:52px; max-width:52px; width:52px;" v-if="showIcon === 'Yes'">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
                                         <tr>
@@ -53,7 +53,7 @@
                             <td align="left" valign="top" style="padding:0">
                                 <table border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
-                                        <tr>
+                                        <tr v-if="phone.length > 0 || fax.length > 0">
                                             <td valign="top" style="color:#414042; font-family:'Tahoma', sans-serif; font-size:12px; line-height:12px; padding:0;">
                                                 <b>
                                                     <span style="font-weight:bold; color:#F57C4B" v-if="phone.length > 0">

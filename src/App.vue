@@ -9,11 +9,11 @@
           <TextInput id="title" v-model="formData.title" placeholder="Front-End Developer"></TextInput>
         </FormGroup>
         <FormGroup attr="phone" label="Phone Number">
-          <TextInput id="phone" v-model="formData.phone" placeholder="480-555-5555"></TextInput>
+          <TelInput id="phone" v-model="formData.phone" placeholder="480-555-5555" type="tel"></TelInput>
         </FormGroup>
         <FormGroup attr="fax" label="Fax Number">
-          <TextInput id="fax" v-model="formData.fax" placeholder="602-555-5555"></TextInput>
-        </FormGroup>
+          <TelInput id="fax" v-model="formData.fax" placeholder="602-555-5555" type="tel"></TelInput>
+        </FormGroup> 
         <FormGroup attr="icon" label="Icon">
           <SelectInput id="icon" v-bind:options="options.icon" v-model="formData.showIcon"></SelectInput>
         </FormGroup>
@@ -34,6 +34,7 @@ import FormGroup from './components/FormGroup.vue';
 import SelectInput from './components/SelectInput.vue';
 import SignatureForm from './components/SignatureForm.vue';
 import SignaturePreview from './components/SignaturePreview.vue';
+import TelInput from './components/TelInput.vue';
 import TextInput from './components/TextInput.vue';
 
 export default {
@@ -44,6 +45,7 @@ export default {
     SelectInput,
     SignatureForm,
     SignaturePreview,
+    TelInput,
     TextInput,
   },
   data() {
