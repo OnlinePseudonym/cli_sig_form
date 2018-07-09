@@ -27,8 +27,14 @@
                         </tr>
                         <tr>
                         <tr>
+                            <td colspan="2" valign="top" style="padding:0; line-height:13px; font-size:13px; font-family:'Tahoma',sans-serif; font-weight:bold; color:#7F7F7F" v-show="showIcon === 'No'">
+                                <strong>LAVIDGE</strong>
+                                <div style="height:4px; line-height:4px; font-size:4px;">&nbsp;</div>
+                            </td>
+                        </tr>
+                        <tr>
                             <td rowspan="2" valign="top" style="padding:0; min-width:52px; max-width:52px; width:52px;" v-show="showIcon === 'Yes'">
-                                <table border="0" cellpadding="0" cellspacing="0" height="23" style="height:23px; font-size:23px; line-height:23px;">
+                                <table border="0" cellpadding="0" cellspacing="0">
                                     <tbody>
                                         <tr>
                                             <td>
@@ -38,7 +44,7 @@
                                         <tr>
                                             <td align="top" style="padding:0;">
                                                 <a href="http://www.lavidge.com/" target="_blank">
-                                                    <img border="0" width="52" height="20" style="width:52px;height:20px" src="http://files.lavidgeinteractive.com/lavidge/images/icons/lavidge_small.png" alt="Lavidge Logo" >
+                                                    <img border="0" width="52" height="20" style="width:52px; font-size:16px;" src="http://files.lavidgeinteractive.com/lavidge/images/icons/lavidge_small.png" alt="LAVIDGE" >
                                                 </a>
                                             </td>
                                         </tr>
