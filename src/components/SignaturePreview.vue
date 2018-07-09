@@ -26,7 +26,6 @@
                             </td>
                         </tr>
                         <tr>
-                        <tr>
                             <td colspan="2" valign="top" style="padding:0; line-height:13px; font-size:13px; font-family:'Tahoma',sans-serif; font-weight:bold; color:#7F7F7F" v-show="showIcon === 'No'">
                                 <strong>LAVIDGE</strong>
                                 <div style="height:4px; line-height:4px; font-size:4px;">&nbsp;</div>
